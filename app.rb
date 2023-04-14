@@ -13,9 +13,9 @@ configure :development do
   BetterErrors.application_root = __dir__
 end
 
-# get '/' do
-#   "Hello world! Foobar"
-# end
+get '/' do
+  "<h1>Hello world!</h1>"
+end
 
 get '/rock' do
   # can render directly
@@ -34,6 +34,6 @@ get '/rock' do
     @outcome = "lost"
   end
 
-  # render statement doesn't work, need specific erb method
+  # render method doesn't work, need specific erb method
   erb(:"game_templates/user_rock")
 end

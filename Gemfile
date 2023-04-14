@@ -31,16 +31,6 @@ group :test do
   gem 'rspec'
   gem 'rspec-html-matchers'
   gem 'webmock'
+  gem 'i18n'
+  # gem 'rack-test' # required?
 end
-
-# https://sinatrarb.com/testing.html
-# group :test do
-#   gem 'rspec'
-#   gem 'rubocop-rspec'
-#   gem 'rubocop'
-#   gem 'coveralls', require: false
-#   gem 'capybara'
-#   gem 'pry-byebug'
-#   gem 'rspec-sinatra'
-#   gem 'selenium-webdriver'
-# end
